@@ -142,6 +142,7 @@ export default defineConfig(({ mode }) => {
       woff2BrowserPlugin(),
       react(),
       checker({
+        enableBuild: false,
         typescript: true,
         eslint:
           envVars.VITE_APP_ENABLE_ESLINT === "false"
